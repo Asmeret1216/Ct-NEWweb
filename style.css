@@ -1,0 +1,124 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fef6f9; /* Soft pastel background */
+    color: #4a4a4a; /* Darker text for contrast */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 2.5rem; /* Smaller font for better mobile fit */
+    margin: 0;
+    color: #ff6699; /* Soft coral-pink */
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Search Box */
+  .search-container {
+    margin: 20px 0;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    border: 2px solid #ff6699;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .search-container button {
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .search-container button:hover {
+    background-color: #ff3366;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 15px;
+  }
+  
+  /* Video Container (Grid for Different Screen Sizes) */
+  #video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+  }
+  
+  video:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 12px;
+    background-color: #ffd5e5; /* Softer pastel pink */
+    color: #4a4a4a;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem; /* Smaller for mobile */
+    }
+  
+    .search-container input {
+      width: 80%; /* Adjust for small screens */
+    }
+  
+    #video-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    video {
+      border-radius: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .search-container input {
+      width: 90%;
+    }
+  
+    .search-container button {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
